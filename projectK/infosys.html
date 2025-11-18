@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Infosys — Company Overview</title>
+  <style>
+    :root {
+      --accent: #0070c0;
+      --muted: #555555;
+      --bg: #fafafa;
+      --card-bg: #ffffff;
+      --maxwidth: 700px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #222222;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      width: 1000%;
+      background: var(--card-bg);
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0, 112, 192, 0.15);
+      padding: 32px;
+      box-sizing: border-box;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .apply-button {
+      background-color: var(--accent);
+      color: white;
+      padding: 12px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .apply-button:hover {
+      background-color: #09465c;
+      /* Darker shade on hover */
+      transform: translateY(-2px);
+    }
+
+    .logo {
+      width: 140px;
+      margin: 0 auto 16px auto;
+    }
+
+    .logo img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      display: block;
+    }
+
+    h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 2rem;
+      color: var(--accent);
+    }
+
+    .subtitle {
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .overview {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .info-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 30px;
+      gap: 16px;
+    }
+
+    .info-item {
+      background: #e6f0ff;
+      border-radius: 8px;
+      padding: 14px 20px;
+      flex: 1 1 45%;
+      min-width: 140px;
+      box-shadow: 0 2px 8px rgba(0, 112, 192, 0.1);
+    }
+
+    .info-item strong {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: var(--accent);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+      font-size: 0.95rem;
+    }
+
+    th,
+    td {
+      padding: 10px 12px;
+      border-bottom: 1px solid #ddd;
+      text-align: left;
+    }
+
+    th {
+      width: 180px;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    .chip {
+      background: var(--accent);
+      color: white;
+      padding: 8px 14px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      box-shadow: 0 2px 6px rgba(0, 112, 192, 0.3);
+    }
+
+    .image-section {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .image-section img {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 6px 24px rgba(0, 112, 192, 0.15);
+      height: auto;
+      display: inline-block;
+    }
+
+    .image-caption {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 8px;
+    }
+
+    .extra-info {
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      margin-top: 0;
+      padding-left: 20px;
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 480px) {
+      .info-list {
+        flex-direction: column;
+      }
+
+      .info-item {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <header>
+      <div class="logo">
+        <img src="C:\Users\win 10\Downloads\istockphoto-1163973538-612x612.jpg" alt="Infosys Logo" />
+      </div>
+      <h1>Infosys</h1>
+      <div class="subtitle">IT Services & Consulting — Based in Bangalore, India</div>
+    </header>
+
+    <section class="overview">
+      <p><strong>Infosys</strong> is a global leader in next-generation digital services and consulting. It provides
+        software development, maintenance, and independent validation services to companies in various industries
+        worldwide.</p>
+    </section>
+
+    <section class="info-list" aria-label="Key company information">
+      <div class="info-item">
+        <strong>Founded</strong>
+        1981
+      </div>
+      <div class="info-item">
+        <strong>Headquarters</strong>
+        Bangalore, Karnataka, India
+      </div>
+      <div class="info-item">
+        <strong>Type</strong>
+        Public Limited Company
+      </div>
+      <div class="info-item">
+        <strong>Leadership</strong>
+        CEO & MD: Salil Parekh
+      </div>
+    </section>
+
+    <table aria-label="Company snapshot">
+      <tbody>
+        <tr>
+          <th>Core Services</th>
+          <td>IT consulting, software development, digital transformation, engineering services, AI & automation</td>
+        </tr>
+        <tr>
+          <th>Sectors</th>
+          <td>Banking, financial services, insurance, manufacturing, retail, telecom, energy, healthcare</td>
+        </tr>
+        <tr>
+          <th>Notable Clients</th>
+          <td>Global 2000 enterprises including Fortune 500 companies</td>
+        </tr>
+        <tr>
+          <th>Philosophy</th>
+          <td>Innovation, customer-centricity, agility, sustainability, and ethical governance</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="chips" aria-label="Sector highlights">
+      <span class="chip">IT Consulting</span>
+      <span class="chip">Digital Transformation</span>
+      <span class="chip">AI & Automation</span>
+      <span class="chip">Engineering Services</span>
+      <span class="chip">Cloud Services</span>
+    </div>
+
+    <section class="image-section" aria-label="Company office image">
+      <img src="C:\Users\win 10\Desktop\gettyimages-513186310-612x612.jpg" alt="Infosys Headquarters in Bangalore" />
+      <div class="image-caption">Infosys Headquarters in Bangalore, India.</div>
+    </section>
+
+    <section class="extra-info">
+      <h2>More about Infosys</h2>
+      <p>
+        Infosys continues to lead the IT services sector with its innovation-driven approach and commitment to
+        delivering value for its clients worldwide. The company invests heavily in emerging technologies and skill
+        development.
+      </p>
+      <ul>
+        <li>Global delivery model with offices in multiple countries</li>
+        <li>Strong focus on sustainability and corporate responsibility</li>
+        <li>Recognized for digital innovation and employee engagement</li>
+      </ul>
+    </section>
+  </div>
+  <div class="apply-button-wrapper">
+    <a href="resume.html" target="_blank" class="apply-button">
+      Apply Now
+    </a>
+  </div>
+</body>
+
+</html>

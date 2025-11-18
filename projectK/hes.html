@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HES Infra Pvt Ltd — Overview</title>
+    <style>
+        :root {
+            --accent: #0b5d8a;
+            --muted: #6b7280;
+            --card: #ffffff;
+            --bg: #f5f7fb;
+            --maxwidth: 1000px;
+            font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: #111827;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            line-height: 1.45;
+            padding: 28px 18px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .wrap {
+            width: 100%;
+            max-width: var(--maxwidth);
+        }
+
+        .apply-button {
+            background-color: var(--accent);
+            color: white;
+            padding: 12px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .apply-button:hover {
+            background-color: #09465c;
+            /* Darker shade on hover */
+            transform: translateY(-2px);
+        }
+
+        header {
+            display: flex;
+            gap: 18px;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            width: 96px;
+            height: 96px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 6px 18px rgba(16, 24, 40, .08);
+            flex: 0 0 96px;
+            background: #fff;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        h1 {
+            font-size: 22px;
+            margin: 0;
+            letter-spacing: -0.2px;
+        }
+
+        .subtitle {
+            color: var(--muted);
+            margin-top: 6px;
+            font-size: 14px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-top: 12px;
+        }
+
+        .info-grid .info {
+            background: #608f77;
+            border: 1px solid #175546;
+            padding: 12px;
+            border-radius: 10px;
+            font-size: 14px;
+        }
+
+        table.snapshot {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 12px;
+            font-size: 14px;
+        }
+
+        table.snapshot th,
+        table.snapshot td {
+            text-align: left;
+            padding: 10px 8px;
+            border-bottom: 1px solid #10253d;
+        }
+
+        table.snapshot th {
+            width: 180px;
+            color: var(--muted);
+            font-weight: 600;
+            font-size: 13px;
+        }
+
+        .sectors {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .chip {
+            background: #0494f5;
+            color: var(--accent);
+            padding: 8px 10px;
+            border-radius: 999px;
+            font-size: 13px;
+            border: 1px solid rgba(11, 93, 138, 0.08);
+        }
+
+        .image-wrap img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            display: block;
+            object-fit: cover;
+            box-shadow: 0 8px 30px rgba(16, 24, 40, .06);
+        }
+
+        .links {
+            margin-top: 12px;
+            font-size: 14px;
+        }
+
+        .links a {
+            color: var(--accent);
+            text-decoration: none;
+            margin-right: 14px;
+        }
+
+        footer {
+            margin-top: 18px;
+            color: var(--muted);
+            font-size: 13px;
+            text-align: center;
+        }
+
+        /* Responsive */
+        @media (max-width:980px) {
+            .hero {
+                grid-template-columns: 1fr;
+            }
+
+            .image-wrap img {
+                max-height: 320px;
+                object-fit: cover;
+            }
+
+            .logo {
+                width: 72px;
+                height: 72px;
+                flex: 0 0 72px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+
+        <header>
+            <div class="logo card" aria-hidden="true">
+                <!-- Replace with actual HES Infra logo URL -->
+                <img src="https://via.placeholder.com/96x96.png?text=HES" alt="HES Infra logo" />
+            </div>
+
+            <div>
+                <h1>HES Infra Pvt Ltd</h1>
+                <div class="subtitle">Infrastructure & EPC Solutions — Based in Hyderabad, India</div>
+            </div>
+        </header>
+
+        <div class="hero">
+            <div class="card summary">
+                <h2 style="margin-top:0; margin-bottom:8px;">Company Overview</h2>
+                <p><strong>HES Infra Pvt Ltd</strong> is a Hyderabad-based infrastructure development company offering
+                    end-to-end EPC services across water supply, irrigation, transportation, and public works.</p>
+
+                <div class="info-grid">
+                    <div class="info">
+                        <strong>Founded</strong><br>2007
+                    </div>
+                    <div class="info">
+                        <strong>Headquarters</strong><br>Hyderabad, Telangana, India
+                    </div>
+                    <div class="info">
+                        <strong>Type</strong><br>Private Limited Company
+                    </div>
+                    <div class="info">
+                        <strong>Leadership</strong><br>MD: M. Srinivas Reddy
+                    </div>
+                </div>
+
+                <table class="snapshot" aria-label="Quick snapshot">
+                    <tr>
+                        <th>Core Services</th>
+                        <td>EPC, water supply, pipeline works, road construction, irrigation projects</td>
+                    </tr>
+                    <tr>
+                        <th>Sectors</th>
+                        <td>Water infrastructure, irrigation, roads & bridges, urban development, civil infrastructure
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Notable Projects</th>
+                        <td>Mission Bhagiratha, Telangana Lift Irrigation Projects, various NH and SH projects</td>
+                    </tr>
+                    <tr>
+                        <th>Philosophy</th>
+                        <td>Quality execution, timely delivery, sustainable infrastructure</td>
+                    </tr>
+                </table>
+
+                <div style="margin-top:12px;">
+                    <strong>Sector highlights</strong>
+                    <div class="sectors">
+                        <span class="chip">Water Supply</span>
+                        <span class="chip">Irrigation</span>
+                        <span class="chip">Pipelines</span>
+                        <span class="chip">Roads & Highways</span>
+                        <span class="chip">Public Works</span>
+                        <span class="chip">Urban Infrastructure</span>
+                    </div>
+                </div>
+
+                <div class="links">
+                    <a href="https://hesinfra.com" target="_blank" rel="noopener">Official website</a>
+                    <a href="https://www.zaubacorp.com/company/HES-INFRASTRUCTURE-PRIVATE-LIMITED/U45200TG2007PTC053649"
+                        target="_blank" rel="noopener">Company Info (Zauba)</a>
+                </div>
+            </div>
+
+            <div class="card image-wrap">
+                <h3 style="margin-top:0;">Company image</h3>
+                <!-- Replace with an actual image of HES Infra's site, team, or logo -->
+                <img src="https://via.placeholder.com/800x400.png?text=HES+Infra+Project+Image"
+                    alt="HES Infra project banner" />
+                <p style="margin-top:10px; color:var(--muted); font-size:13px;">
+                    Image: representative banner or construction project. Replace with your own high-resolution visuals
+                    or official branding.
+                </p>
+            </div>
+        </div>
+
+        <section class="card" style="margin-bottom:12px;">
+            <h3 style="margin-top:0;">More about HES Infra</h3>
+            <p style="margin-bottom:8px;">HES Infra Pvt Ltd has a strong track record in executing water and irrigation
+                projects, particularly in South India. The company emphasizes on high-quality delivery, safety, and
+                timely project execution.</p>
+
+            <ul style="margin-top:6px;">
+                <li>Expertise in lift irrigation and piped water supply systems</li>
+                <li>Execution of rural and urban infrastructure projects</li>
+                <li>ISO certified and known for compliance and safety standards</li>
+            </ul>
+        </section>
+
+        
+        <div class="apply-button-wrapper">
+            <a href="resume.html" target="_blank" class="apply-button">
+                Apply Now
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

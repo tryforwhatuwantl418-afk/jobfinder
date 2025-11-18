@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Website Home</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #334;
+            background-size: cover;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #0f62c8, #3a8ef6);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            width: 200%;
+        }
+
+        header h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 36px;
+            letter-spacing: 2px;
+            margin: 0;
+        }
+
+        nav {
+            margin: 15px 0;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 6px 12px;
+            border-radius: 6px;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background: blue;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Grid layout for branch cards */
+        .branches {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 30px;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        /* Branch cards */
+        .branch {
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .branch:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Unique backgrounds + text colors */
+        .mechanical {
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: #4b1f2f;
+        }
+
+        .electrical {
+            background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+            color: #0d1b4d;
+        }
+
+        .civil {
+            background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+            color: #3e245c;
+        }
+
+        .computer {
+            background: linear-gradient(135deg, #84fab0, #8fd3f4);
+            color: #084c4c;
+        }
+
+        .chemical {
+            background: linear-gradient(135deg, #fccb90, #d57eeb);
+            color: #4b2c0a;
+        }
+
+        .aerospace {
+            background: linear-gradient(135deg, #f6d365, #fda085);
+            color: #4b2a07;
+        }
+
+        .biomedical {
+            background: linear-gradient(135deg, #96e6a1, #d4fc79);
+            color: #204d20;
+        }
+
+        .environmental {
+            background: linear-gradient(135deg, #a8edea, #fed6e3);
+            color: #2a3e3d;
+        }
+
+        .industrial {
+            background: linear-gradient(135deg, #ffecd2, #fcb69f);
+            color: #4b3220;
+        }
+
+        .software {
+            background: linear-gradient(135deg, #cfd9df, #e2ebf0);
+            color: #222;
+        }
+
+        .icon {
+            font-size: 48px;
+            margin-bottom: 12px;
+        }
+
+        .title {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .desc {
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>JOB ROUTERS</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Direct grid of branch cards -->
+    <div class="branches">
+        <div class="branch mechanical" data-url="mech.html">
+            <div class="icon">⚙️</div>
+            <div class="title">Mechanical Engineering</div>
+            <div class="desc">Design & manufacturing of mechanical systems.</div>
+        </div>
+
+        <div class="branch electrical" data-url="eee.html">
+            <div class="icon">💡</div>
+            <div class="title">Electrical Engineering</div>
+            <div class="desc">Power systems & electronics.</div>
+        </div>
+
+        <div class="branch civil" data-url="civil.html">
+            <div class="icon">🏗️</div>
+            <div class="title">Civil Engineering</div>
+            <div class="desc">Infrastructure & construction.</div>
+        </div>
+
+        <div class="branch computer" data-url="mech.html">
+            <div class="icon">💻</div>
+            <div class="title">Computer Engineering</div>
+            <div class="desc">Hardware & software integration.</div>
+        </div>
+
+        <div class="branch chemical" data-url="chemi.html">
+            <div class="icon">⚗️</div>
+            <div class="title">Chemical Engineering</div>
+            <div class="desc">Chemical processes & product development.</div>
+        </div>
+
+        <div class="branch aerospace" data-url="aerospace2.html">
+            <div class="icon">🚀</div>
+            <div class="title">Aerospace Engineering</div>
+            <div class="desc">Aircraft & spacecraft design.</div>
+        </div>
+
+        <div class="branch biomedical" data-url="bio.html">
+            <div class="icon">🩺</div>
+            <div class="title">Biomedical Engineering</div>
+            <div class="desc">Medical devices & healthcare tech.</div>
+        </div>
+
+        <div class="branch environmental" data-url="envi.html">
+            <div class="icon">🌱</div>
+            <div class="title">Environmental Engineering</div>
+            <div class="desc">Solutions for environmental protection.</div>
+        </div>
+
+        <div class="branch industrial" data-url="ind.html">
+            <div class="icon">🏭</div>
+            <div class="title">Industrial Engineering</div>
+            <div class="desc">Process optimization & efficiency.</div>
+        </div>
+
+        <div class="branch software" data-url="soft.html">
+            <div class="icon">{}‍💻</div>
+            <div class="title">Software Engineering</div>
+            <div class="desc">Design & development of software.</div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 My Website. All rights reserved.
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('.branch').forEach(branch => {
+                branch.style.cursor = 'pointer';
+                branch.onclick = () => {
+                    if (branch.dataset.url) {
+                        window.location.href = branch.dataset.url;
+                    }
+                };
+            });
+        });
+    </script>
+</body>
+
+</html>

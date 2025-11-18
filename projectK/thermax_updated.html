@@ -1,0 +1,342 @@
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Thermax Ltd — Overview</title>
+<style>
+        :root {
+            --accent: #005baa;
+            --muted: #6b7280;
+            --card: #ffffff;
+            --bg: #f5f7fb;
+            --maxwidth: 1000px;
+            font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: #111827;
+            line-height: 1.45;
+            padding: 28px 18px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .wrap {
+            width: 100%;
+            max-width: var(--maxwidth);
+        }
+
+        header {
+            display: flex;
+            gap: 18px;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .apply-button {
+            background-color: var(--accent);
+            color: white;
+            padding: 12px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .apply-button:hover {
+            background-color: #09465c;
+            /* Darker shade on hover */
+            transform: translateY(-2px);
+        }
+
+        .logo {
+            width: 96px;
+            height: 96px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 6px 18px rgba(16, 24, 40, .08);
+            flex: 0 0 96px;
+            background: #fff;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+            padding: 10px;
+        }
+
+        h1 {
+            font-size: 22px;
+            margin: 0;
+            letter-spacing: -0.2px;
+        }
+
+        .subtitle {
+            color: var(--muted);
+            margin-top: 6px;
+            font-size: 14px;
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            align-items: start;
+            margin-bottom: 22px;
+        }
+
+        .card {
+            background: var(--card);
+            border-radius: 12px;
+            padding: 18px;
+            box-shadow: 0 6px 20px rgba(15, 23, 42, .06);
+        }
+
+        .summary p {
+            margin: 0 0 10px 0;
+            color: #0f172a;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-top: 12px;
+        }
+
+        .info {
+            background: #f0f6fb;
+            border: 1px solid #d4e2f2;
+            padding: 12px;
+            border-radius: 10px;
+            font-size: 14px;
+        }
+
+        table.snapshot {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 12px;
+            font-size: 14px;
+        }
+
+        table.snapshot th,
+        table.snapshot td {
+            text-align: left;
+            padding: 10px 8px;
+            border-bottom: 1px solid #eef2f7;
+        }
+
+        table.snapshot th {
+            width: 180px;
+            color: var(--muted);
+            font-weight: 600;
+            font-size: 13px;
+        }
+
+        .sectors {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .chip {
+            background: #f0f9ff;
+            color: var(--accent);
+            padding: 8px 10px;
+            border-radius: 999px;
+            font-size: 13px;
+            border: 1px solid rgba(0, 91, 170, 0.08);
+        }
+
+        .slider {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 8px 30px rgba(16, 24, 40, .06);
+            margin-top: 16px;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.6s ease;
+            width: 100%;
+        }
+
+        .slides img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .dots {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .dot {
+            height: 10px;
+            width: 10px;
+            margin: 0 5px;
+            background: #ccc;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .dot.active {
+            background: var(--accent);
+        }
+
+        .links {
+            margin-top: 12px;
+            font-size: 14px;
+        }
+
+        .links a {
+            color: var(--accent);
+            text-decoration: none;
+            margin-right: 14px;
+        }
+
+        footer {
+            margin-top: 18px;
+            color: var(--muted);
+            font-size: 13px;
+            text-align: center;
+        }
+
+        @media (max-width:980px) {
+            .logo {
+                width: 72px;
+                height: 72px;
+                flex: 0 0 72px;
+            }
+
+            .slides img {
+                height: 240px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<div class="logo card">
+<img alt="Thermax Logo" src="C:\Users\win 10\Downloads\Thermax-Logo.wine.svg"/>
+</div>
+<div>
+<h1>Thermax Limited</h1>
+<div class="subtitle">Energy &amp; Environment Solutions Company</div>
+</div>
+</header>
+<div class="hero">
+<div class="card summary">
+<h2>Company Overview</h2>
+<p><strong>Thermax Limited</strong> is a leading Indian engineering company providing sustainable
+                    solutions in energy and environment, including boilers, heaters, power plants, water treatment, and
+                    pollution control systems.</p>
+<div class="info-grid">
+<div class="info"><strong>Founded</strong><br/>1966</div>
+<div class="info"><strong>Headquarters</strong><br/>Pune, Maharashtra, India</div>
+<div class="info"><strong>Type</strong><br/>Public company (NSE: THERMAX)</div>
+<div class="info"><strong>Leadership</strong><br/>Chairperson: Meher Pudumjee</div>
+</div>
+<table class="snapshot">
+<tr>
+<th>Core Services</th>
+<td>Energy systems, environment solutions, chemicals</td>
+</tr>
+<tr>
+<th>Sectors</th>
+<td>Power, industrial, water &amp; waste management, renewable energy</td>
+</tr>
+<tr>
+<th>Notable Projects</th>
+<td>Power plants, industrial boilers, pollution control systems</td>
+</tr>
+<tr>
+<th>Philosophy</th>
+<td>Sustainable development with a focus on clean energy and environment</td>
+</tr>
+</table>
+<div style="margin-top:12px;">
+<strong>Sector highlights</strong>
+<div class="sectors">
+<span class="chip">Energy</span>
+<span class="chip">Environment</span>
+<span class="chip">Industrial</span>
+<span class="chip">Renewables</span>
+</div>
+</div>
+<!-- Auto Image Slider -->
+<div class="slider">
+<div class="slides" id="slides">
+<img alt="Thermax Boiler" src="C:\Users\win 10\Desktop\photos\thermax.jpg"/>
+<img src="C:\Users\win 10\Desktop\photos\Page-1-Article-1_Gulf.jpg"/>
+<img alt="Thermax Sustainability" src="C:\Users\win 10\Desktop\photos\Thermax-1.jpg"/>
+</div>
+</div>
+<div class="dots" id="dots"></div>
+<div class="links">
+<a href="https://www.thermaxglobal.com" target="_blank">Official website</a>
+<a href="https://en.wikipedia.org/wiki/Thermax" target="_blank">Wikipedia</a>
+</div>
+</div>
+</div>
+<section class="card">
+<h3>More about Thermax</h3>
+<p>Thermax is globally recognized for its sustainable energy and environmental solutions. It operates in
+                over 75 countries, delivering projects that promote clean and green technologies for industries
+                worldwide.</p>
+</section>
+
+</div>
+<script>
+        let slideIndex = 0;
+        const slides = document.getElementById("slides");
+        const images = slides.querySelectorAll("img");
+        const dotsContainer = document.getElementById("dots");
+
+        // create dots
+        images.forEach((_, i) => {
+            const dot = document.createElement("span");
+            dot.classList.add("dot");
+            dotsContainer.appendChild(dot);
+        });
+
+        function showSlide(n) {
+            slideIndex = (n + images.length) % images.length;
+            slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+            updateDots();
+        }
+
+        function updateDots() {
+            document.querySelectorAll(".dot").forEach((dot, i) => {
+                dot.classList.toggle("active", i === slideIndex);
+            });
+        }
+
+        function autoSlide() {
+            showSlide(slideIndex + 1);
+            setTimeout(autoSlide, 2000); // 2 seconds
+        }
+
+        showSlide(0);
+        autoSlide();
+    </script>
+<div class="apply-button-wrapper">
+<a class="apply-button" href="resume.html" target="_blank">
+            Apply Now
+        </a>
+</div>
+</body>
+</html>
+thermax.html
+Displaying thermax.html.</title></meta></head></html></head></html></tryforwhatuwantl418@gmail.com></tryforwhatuwantl418@gmail.com></tryforwhatuwantl418@gmail.com></tryforwhatuwantl418@gmail.com></title></head></html></linearlayout></linearlayout></use></manifest></tryforwhatuwantl418@gmail.com></tryforwhatuwantl418@gmail.com></tryforwhatuwantl418@gmail.com></tryforwhatuwantl418@gmail.com></tryforwhatuwantl418@gmail.com></tryforwhatuwantl418@gmail.com>

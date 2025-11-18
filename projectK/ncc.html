@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NCC Limited — Overview</title>
+    <style>
+        :root {
+            --accent: #0b5d8a;
+            --muted: #6b7280;
+            --card: #ffffff;
+            --bg: #f5f7fb;
+            --maxwidth: 1000px;
+            font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: #111827;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            line-height: 1.45;
+            padding: 28px 18px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .wrap {
+            width: 100%;
+            max-width: var(--maxwidth);
+        }
+
+        header {
+            display: flex;
+            gap: 18px;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            width: 96px;
+            height: 96px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 6px 18px rgba(16, 24, 40, .08);
+            flex: 0 0 96px;
+            background: #fff;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+            padding: 10px;
+            background: white;
+        }
+
+        h1 {
+            font-size: 22px;
+            margin: 0;
+            letter-spacing: -0.2px;
+        }
+
+        .subtitle {
+            color: var(--muted);
+            margin-top: 6px;
+            font-size: 14px;
+        }
+
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-top: 12px;
+        }
+
+        .info-grid .info {
+            background: #608f77;
+            border: 1px solid #175546;
+            padding: 12px;
+            border-radius: 10px;
+            font-size: 14px;
+        }
+
+        table.snapshot {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 12px;
+            font-size: 14px;
+        }
+
+        table.snapshot th,
+        table.snapshot td {
+            text-align: left;
+            padding: 10px 8px;
+            border-bottom: 1px solid #10253d;
+        }
+
+        table.snapshot th {
+            width: 180px;
+            color: var(--muted);
+            font-weight: 600;
+            font-size: 13px;
+        }
+
+        .sectors {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .apply-button {
+            background-color: var(--accent);
+            color: white;
+            padding: 12px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .apply-button:hover {
+            background-color: #09465c;
+            /* Darker shade on hover */
+            transform: translateY(-2px);
+        }
+
+        .chip {
+            background: #ffffff;
+            color: var(--accent);
+            padding: 8px 10px;
+            border-radius: 999px;
+            font-size: 13px;
+            border: 1px solid rgba(11, 93, 138, 0.08);
+        }
+
+        .image-wrap img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            display: block;
+            object-fit: cover;
+            box-shadow: 0 8px 30px rgba(16, 24, 40, .06);
+        }
+
+        .links {
+            margin-top: 12px;
+            font-size: 14px;
+        }
+
+        .links a {
+            color: var(--accent);
+            text-decoration: none;
+            margin-right: 14px;
+        }
+
+        footer {
+            margin-top: 18px;
+            color: var(--muted);
+            font-size: 13px;
+            text-align: center;
+        }
+
+        /* Responsive */
+        @media (max-width:980px) {
+            .hero {
+                grid-template-columns: 1fr;
+            }
+
+            .image-wrap img {
+                max-height: 320px;
+                object-fit: cover;
+            }
+
+            .logo {
+                width: 72px;
+                height: 72px;
+                flex: 0 0 72px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+
+        <header>
+            <div class="logo card" aria-hidden="true">
+                <!-- NCC logo -->
+                <img src="C:\Users\win 10\Downloads\ncc.jpg" alt="Tata Projects Ltd Logo" class="ncc-logo"
+                    alt="NCC Limited Logo" />
+            </div>
+
+            <div>
+                <h1>NCC Limited</h1>
+                <div class="subtitle">Infrastructure and Construction Company — One of India’s largest</div>
+            </div>
+        </header>
+
+        <div class="hero">
+            <div class="card summary">
+                <h2 style="margin-top:0; margin-bottom:8px;">Company Overview</h2>
+                <p><strong>NCC Limited</strong> is a leading Indian infrastructure and construction company, focused on
+                    delivering large-scale projects across various sectors including roads, buildings, water, power, and
+                    real estate.</p>
+
+                <div class="info-grid">
+                    <div class="info">
+                        <strong>Founded</strong><br>1978
+                    </div>
+                    <div class="info">
+                        <strong>Headquarters</strong><br>Hyderabad, Telangana, India
+                    </div>
+                    <div class="info">
+                        <strong>Type</strong><br>Public company; listed on NSE & BSE
+                    </div>
+                    <div class="info">
+                        <strong>Leadership</strong><br>MD & CEO: V. Ramakrishna<br>Chairman: G. R. Sanjeeva Reddy
+                    </div>
+                </div>
+
+                <table class="snapshot" aria-label="Quick snapshot">
+                    <tr>
+                        <th>Core Services</th>
+                        <td>Construction, Infrastructure Development, Real Estate, EPC Projects</td>
+                    </tr>
+                    <tr>
+                        <th>Sectors</th>
+                        <td>Roads & highways, Buildings, Water & wastewater, Power, Mining, Real estate</td>
+                    </tr>
+                    <tr>
+                        <th>Notable Projects</th>
+                        <td>National Highways, Hyderabad Metro Rail, Smart City projects, Industrial parks</td>
+                    </tr>
+                    <tr>
+                        <th>Philosophy</th>
+                        <td>Innovation, Quality, Sustainability, Customer-centric approach</td>
+                    </tr>
+                </table>
+
+                <div style="margin-top:12px;">
+                    <strong>Sector highlights</strong>
+                    <div class="sectors">
+                        <span class="chip">Roads & Highways</span>
+                        <span class="chip">Metro Rail</span>
+                        <span class="chip">Water & Wastewater</span>
+                        <span class="chip">Power</span>
+                        <span class="chip">Real Estate</span>
+                        <span class="chip">Mining</span>
+                    </div>
+                </div>
+
+                <div class="links">
+                    <a href="https://www.ncclimited.com" target="_blank" rel="noopener">Official website</a>
+                    <a href="https://en.wikipedia.org/wiki/NCC_Limited" target="_blank" rel="noopener">Wikipedia</a>
+                </div>
+            </div>
+
+            <div class="card image-wrap">
+                <h3 style="margin-top:0;">Company image</h3>
+                <img src="c:\Users\win 10\Desktop\photos\Legacy-ncclimited.jpg" />
+                <p style="margin-top:10px; color:var(--muted); font-size:13px;">
+                    Image: NCC Limited construction site banner. Replace with your preferred official images if needed.
+                </p>
+            </div>
+        </div>
+
+        <section class="card" style="margin-bottom:12px;">
+            <h3 style="margin-top:0;">More about NCC Limited</h3>
+            <p style="margin-bottom:8px;">NCC Limited has a strong track record of infrastructure delivery with
+                expertise
+                in roads, urban infrastructure, buildings, and industrial sectors. It combines innovative technologies
+                with sustainability to drive progress.</p>
+
+            <ul style="margin-top:6px;">
+                <li>Comprehensive EPC and project management services</li>
+                <li>Focus on sustainable and smart infrastructure solutions</li>
+                <li>Presence across multiple Indian states and international ventures</li>
+            </ul>
+        </section>
+
+        <footer>
+            <div>Prepared by ChatGPT — summary converted to HTML</div>
+            <div style="margin-top:6px;">Tip: to use a different picture, replace the <code>src</code> attributes of the
+                <code>&lt;img&gt;</code> tags with your image URL.
+            </div>
+        </footer>
+        <div class="apply-button-wrapper">
+            <a href="resume.html" target="_blank" class="apply-button">
+                Apply Now
+            </a>
+        </div>
+
+    </div>
+</body>
+
+</html>
